@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm mới sản phẩm - Vũ Hoài Nam - 2210900050</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .container input[type="text"],
+        .container input[type="date"],
+        .container input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        
+        .container input[type="radio"] {
+            margin-right: 5px;
+        }
+        
+        .container input[type="submit"],
+        .container input[type="reset"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .container input[type="submit"]:hover,
+        .container input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        
+        .error-message {
+            color: red;
+        }
+        
+        .link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thêm mới sản phẩm</h1>
+        <form action="" method="post" name="frm_vuhoainam">
+            <!-- Các trường nhập liệu -->
+            <div>
+                <label for="MASP_2210900050">Mã sản phẩm:</label>
+                <input type="text" name="MASP_2210900050" id="MASP_2210900050">
+            </div>
+            <!-- Thêm các trường khác tương tự -->
+
+            <div>
+                <input type="submit" name="btnThem_vuhoainam" value="Thêm - Vũ Hoài Nam">
+                <input type="reset" name="btnResetvuhoainam" value="Reset - Vũ Hoài Nam">
+            </div>
+            <span class="error-message"><?php echo "Error message: " . $error_vuhoainam; ?></span>
+        </form>
+        <a class="link" href="sanpham-list-vuhoainam.php">Danh sách sản phẩm</a>
+    </div>
+</body>
+</html>
